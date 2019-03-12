@@ -1,13 +1,14 @@
 D-NOTE-BCC
 ----------
 
-1. create docker image from git repo
 
-$ docker build -t docker-d-note-bcc .
+create docker image from git repo
+ 
+  $ docker build -t docker-d-note-bcc .
 
-2. deploy that image
+deploy that image
 
-$ docker run --detach --volume /srv/dnote:/dnote --publish 8080:8080 --name dnote docker-d-note-bcc
+  $ docker run --detach --volume /srv/dnote:/dnote --publish 8080:8080 --name dnote docker-d-note-bcc
 
 hit : localhost:8080 
 
